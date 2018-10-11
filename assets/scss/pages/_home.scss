@@ -1,0 +1,409 @@
+//Section video
+.video {
+  padding: 80px 0 100px 0;
+  text-align: center;
+  background-color: $background-primary-color;
+
+  @include breakpoint(_768) {
+    padding: 60px 0;
+  }
+
+  @include breakpoint(_600) {
+    padding: 30px 0;
+  }
+
+  .section-caption {
+    @include section-caption;
+
+    &__span {
+      @include section-caption-span;
+    }
+  }
+
+  &__video-holder {
+    margin: 40px 0;
+
+    iframe {
+      @include breakpoint(_768) {
+        height: 350px;
+        width: 500px;
+      }
+
+      @include breakpoint(_768) {
+        height: 200px;
+        width: 300px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+//Section phones
+.phones {
+  padding: 150px 0;
+  background-color: $background-secondary-color;
+  @include section-clip-primary;
+
+  @include breakpoint(_768) {
+    padding: 60px 0;
+    clip-path: initial;
+  }
+
+  @include breakpoint(_600) {
+    padding: 30px 0;
+  }
+
+  &__top {
+    text-align: center;
+
+    .section-caption {
+      @include section-caption;
+    }
+
+    &__description {
+      margin: 10px 0 40px 0;
+      font-size: 1.2rem;
+
+      span {
+        text-decoration: underline;
+
+        a {
+          color: $font-tertiary-color;
+        }
+      }
+    }
+
+    .primary-button {
+      margin: 0 auto;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+
+    @include breakpoint(_1200) {
+      margin-top: 50px;
+    }
+
+    @include breakpoint(_990) {
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    &__item {
+      flex-basis: 30%;
+      text-align: center;
+      margin: 20px 30px 20px 0;
+
+      @include breakpoint(_766) {
+        margin: 20px auto;
+        flex-basis: 80%;
+      }
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+
+        @include breakpoint(_766) {
+          margin: 20px auto;
+        }
+      }
+
+      &:last-of-type {
+        @include breakpoint(_990) {
+          margin: 20px auto;
+        }
+      }
+
+      &-caption {
+        font-size: 2rem;
+        color: $font-secondary-color;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+//Section b2blaptop
+.b2blaptop {
+  background-color: $background-primary-color;
+  padding: 50px 0 100px 0;
+
+  @include breakpoint(_768) {
+    padding: 60px 0;
+  }
+
+  @include breakpoint(_600) {
+    padding: 30px 0;
+  }
+
+  &__left {
+    margin-right: 30px;
+    flex-basis: 27%;
+
+    @include breakpoint(_1200) {
+      text-align: center;
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+
+    &__caption {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    &__text {
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+
+    &__video-holder {
+      margin: 40px 0;
+
+      @include breakpoint(_1200) {
+        margin: 20px 0;
+      }
+
+      iframe {
+        @include breakpoint(_1200) {
+          height: 300px;
+          width: 430px;
+
+          @include breakpoint(_550) {
+            height: 200px;
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex-basis: 70%;
+
+    @include breakpoint(_1200) {
+      text-align: center;
+      flex-basis: 100%;
+      margin-top: 30px;
+    }
+
+    &-img {
+      @include breakpoint(_1200) {
+        height: 300px;
+      }
+
+      @include breakpoint(_550) {
+        height: 200px;
+        width: 300px;
+      }
+    }
+
+    &__button-holder {
+      @include flex-center;
+
+      @include breakpoint(_550) {
+        flex-direction: column;
+      }
+
+      .primary-button {
+        margin: 15px;
+      }
+    }
+  }
+}
+
+//Section appstore
+.appstore {
+  padding: 100px 0 60px 0;
+  background: $background-gradient-primary;
+  @include section-clip-secondary;
+
+  @include breakpoint(_768) {
+    padding: 60px 0;
+    clip-path: initial;
+  }
+
+  @include breakpoint(_600) {
+    padding: 30px 0;
+  }
+
+  &>.container {
+    @include breakpoint(_768) {
+      justify-content: center !important;
+      flex-direction: column;
+    }
+  }
+
+  &__caption {
+    @include section-caption-white;
+
+    @include breakpoint(_768) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img-holder {
+    img {
+      @include breakpoint(_550) {
+        width: 120px;
+      }
+    }
+  }
+}
+
+//Section withform
+.withform {
+  padding: 60px 0 120px 0;
+  background-color: $background-quaternary-color;
+  color: $font-primary-color;
+
+  @include breakpoint(_768) {
+    padding: 60px 0;
+  }
+
+  @include breakpoint(_600) {
+    padding: 30px 0;
+  }
+
+  &>.container {
+    @include breakpoint(_550) {
+      justify-content: center !important;
+    }
+  }
+
+  &__caption {
+    @include section-caption-white;
+
+    @include breakpoint(_550) {
+      margin: 20px auto;
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+
+    @include breakpoint(_550) {
+      text-align: center;
+    }
+  }
+
+  #email {
+    margin-right: 20px;
+    width: 75%;
+
+    @include breakpoint(_550) {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  input[type=submit] {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: $font-primary-color;
+    background-color: #4a4a4a;
+    vertical-align: bottom;
+    border: none;
+    padding: 10px;
+
+    @include breakpoint(_550) {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+}
+
+//section about
+.about {
+  padding: 100px 0;
+  background: $background-secondary-color;
+  position: relative;
+
+  @include breakpoint(_768) {
+    padding: 60px 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @include breakpoint(_550) {
+    padding: 30px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -11%;
+    right: -20px;
+    height: 16%;
+    width: 150%;
+    background: $background-secondary-color;
+    transform: rotate(2deg);
+    z-index: 50;
+  }
+
+  &__caption {
+    @include section-caption;
+
+    @include breakpoint(_550) {
+      text-align: center
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    padding: 10px 0 30px 0;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include breakpoint(_550) {
+      justify-content: center;
+    }
+
+    &__item {
+      font-size: 1.2rem;
+      color: $font-tertiary-color;
+      text-decoration: underline;
+      padding-right: 10px;
+      text-transform: capitalize;
+
+      @include breakpoint(_550) {
+        padding-right: 5px;
+      }
+
+      &:hover {
+        color: $font-tertiary-color;
+      }
+
+      &:last-of-type::after {
+        content: "";
+      }
+
+      &::after {
+        content: "|";
+        padding-left: 10px;
+        text-decoration: none;
+
+        @include breakpoint(_550) {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

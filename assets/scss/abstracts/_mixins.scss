@@ -1,0 +1,32 @@
+@mixin section-caption {
+  color: $font-tertiary-color;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+@mixin section-caption-span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $font-secondary-color;
+}
+
+@mixin section-caption-white {
+  color: $font-primary-color;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin section-clip-primary {
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+}
+
+@mixin section-clip-secondary {
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0 100%);
+}

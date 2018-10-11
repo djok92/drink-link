@@ -1,0 +1,32 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  font-weight: 300;
+
+  @include breakpoint(_768) {
+    font-size: 14px;
+  }
+
+  @include breakpoint(_550) {
+    font-size: 12px;
+
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  overflow: hidden;
+}
